@@ -17,9 +17,9 @@ const Edit = () => {
 
         setTimeout(() => {
             fetch('http://localhost:8000/blogs/'+id, {
-            // method: 'UPDATE',
-            // headers: { "Content-Type": "application/json" },
-            // body: JSON.stringify(blog)
+            method: 'PUT',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(blog)
             }).then(() => {
                 setIsPending(false);
                 history.push(`/blogs/${id}`);

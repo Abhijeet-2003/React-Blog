@@ -35,7 +35,7 @@ const BlogDetails = () => {
                     <div>{blog.body}</div>
                     { !delPending && <button onClick={handleClick}>Delete</button> }
                     { delPending && <button disabled>Deleting..</button> }
-                    <button onClick={handleEdit}>Edit</button>
+                    <button onClick={handleEdit} className="edit">Edit</button>
                 </article>
             )}
         </div>

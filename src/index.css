@@ -76,6 +76,16 @@
   cursor: pointer;
 }
 
+button:hover {
+  border: 1.5px solid #f1356d;
+  color: #f1356d;
+  background: #fff;
+}
+
+.blog-details .edit{
+  margin-left: 15px;
+}
+
 .create{
   max-width: 400px;
   margin: 0 auto;
